@@ -1,4 +1,5 @@
 import './App.css';
+import MoviesLength from './Views/MoviesLength'
 import Home from './Views/Home'
 import CreateMovie from './Views/CreateMovie'
 import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App" class="bg-slate-900 min-h-screen">
       <StoreProvider>
+          <MoviesLength />
           <BrowserRouter>
             <Routes>
             <Route path="/" element={<Home />}></Route>

@@ -26,7 +26,6 @@ export default function listMovies(){
 
     return(
         <div>
-            <h1 class="flex justify-center text-3xl font-bold text-white">List movies {moviesLength} elements</h1>
             <Link to="/create" relative="path" class="text-1xl font-bold text-white underline">Create Movie</Link>
             <div class="flex flex-col m-4">
             {

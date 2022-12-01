@@ -17,8 +17,7 @@ export default function createMovie(){
 
 
     return(
-        <div>  
-            <h1 class="flex justify-center text-3xl font-bold text-white">List movies {moviesLength} elements</h1>
+        <div>
             <Link to="/" relative="path" class="text-1xl font-bold text-white underline">List Movies</Link>
             <div class="w-full max-w-sm">
                 <div class="md:flex md:items-center mb-6">
