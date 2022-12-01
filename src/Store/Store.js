@@ -13,15 +13,14 @@ export function StoreProvider(props){
             setMoviesArray(values)
             setMoviesLength(values.length)
         })
-    
     }
 
     useEffect(()=>{
         moviesList()
     },[])
-
+    
     return(
-        <StoreContext.Provider value={{moviesArray: moviesArray, setMoviesArray: setMoviesArray}}>
+        <StoreContext.Provider value={{moviesArray: moviesArray, setMoviesArray: setMoviesArray, moviesLength: moviesLength}}>
             {props.children}
         </StoreContext.Provider>
     )
